@@ -1,11 +1,39 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { ListComponent } from './list/list.component';
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {path:"list",component:ListComponent},
   {path:"search",component:SearchComponent}
+=======
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
+import { HomeComponent } from './home/home.component';
+import { ListComponent } from './list/list.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
+import { SearchResultComponent } from './search-result/search-result.component';
+import { BookingsComponent } from './bookings/bookings.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
+import { EditComponent } from './edit/edit.component';
+import { InvoiceComponent } from './invoice/invoice.component';
+
+const routes: Routes = [
+  {path:"login-page", component:LoginPageComponent},
+  {path:"register-page", component:RegisterPageComponent},
+  {path:"home", component:HomeComponent},
+  {path:"list", component:ListComponent},
+  {path:"profile", component:ProfileComponent},
+  {path:"payment-page", component:PaymentPageComponent},
+  {path:"search-result", component:SearchResultComponent},
+  {path:"bookings", component:BookingsComponent},
+  {path:"details-page", component:DetailsPageComponent},
+  {path:"edit", component:EditComponent},
+  {path:"invoice", component:InvoiceComponent},
+  {path:"**",component:HomeComponent}
+>>>>>>> ca23e427a8c36ada630064383f0ae86b8e05fe1e
 ];
 
 @NgModule({
