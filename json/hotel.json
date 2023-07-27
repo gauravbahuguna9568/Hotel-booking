@@ -1,0 +1,85 @@
+{
+    "hotel": [
+      {
+        "id": "101",
+        "hotelName": "Holiday Inn",
+        "roomType": "Delux",
+        "location": "nkjbckjblc",
+        "city": "Pune",
+        "img": ""
+      },
+      {
+        "id": "102",
+        "hotelName": "Four Seasons",
+        "roomType": "Suite",
+        "location": "kjdbkjcbdkc",
+        "city": "Bareilly",
+        "img": ""
+      },
+      {
+        "id": "hoK0r1R"
+      }
+    ],
+    "customer": [
+      {
+        "customerId": "201",
+        "customerName": "kajal",
+        "mobile": "4748736258",
+        "email": "kajal@gmail.com",
+        "password": "123",
+        "checkIn": "02/07/2023",
+        "checkOut": "12/07/2023",
+        "booking": [
+          {
+            "bookingId": "1",
+            "hotelId": "101",
+            "guest": "kajal",
+            "roomType": "Delux",
+            "checkIn": "02/07/2023",
+            "checkOut": "12/07/2023",
+            "price": "12000"
+          }
+        ]
+      },
+      {
+        "customerId": "202",
+        "customerName": "gaurav",
+        "mobile": "4748736258",
+        "email": "gaurav@gmail.com",
+        "password": "123",
+        "checkIn": "02/07/2023",
+        "checkOut": "12/07/2023",
+        "booking": [
+          {
+            "bookingId": "2",
+            "hotelId": "101",
+            "guest": "kajal",
+            "roomType": "Delux",
+            "checkIn": "02/07/2023",
+            "checkOut": "12/07/2023",
+            "price": "13000"
+          }
+        ]
+      },
+      {
+        "customerId": "203",
+        "customerName": "sajal",
+        "mobile": "4748736258",
+        "email": "sajal@gmail.com",
+        "password": "123",
+        "checkIn": "02/07/2023",
+        "checkOut": "12/07/2023",
+        "booking": [
+          {
+            "bookingId": "3",
+            "hotelId": "101",
+            "guest": "kajal",
+            "roomType": "Delux",
+            "checkIn": "02/07/2023",
+            "checkOut": "12/07/2023",
+            "price": "12000"
+          }
+        ]
+      }
+    ]
+  }
