@@ -4,36 +4,35 @@
         "id": "101",
         "hotelName": "Holiday Inn",
         "roomType": "Delux",
-        "location": "nkjbckjblc",
+        "location": "Civil Lines",
         "city": "Pune",
         "img": ""
       },
       {
         "id": "102",
-        "hotelName": "Four Seasons",
+        "hotelName": "Alchemy Suites",
         "roomType": "Suite",
-        "location": "kjdbkjcbdkc",
-        "city": "Bareilly",
+        "location": "Koramangala",
+        "city": "Bangalore",
         "img": ""
-      },
-      {
-        "id": "hoK0r1R"
       }
+      
+
     ],
     "customer": [
       {
         "customerId": "201",
-        "customerName": "kajal",
-        "mobile": "4748736258",
+        "customerName": "Kajal",
+        "mobile": "9748736258",
         "email": "kajal@gmail.com",
-        "password": "123",
+        "password": "12345",
         "checkIn": "02/07/2023",
         "checkOut": "12/07/2023",
         "booking": [
           {
             "bookingId": "1",
             "hotelId": "101",
-            "guest": "kajal",
+            "guest": "Kajal",
             "roomType": "Delux",
             "checkIn": "02/07/2023",
             "checkOut": "12/07/2023",
