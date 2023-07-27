@@ -30,4 +30,5 @@ searchByCity(city:string){
   return this.http.get<Hotels[]>(HotelsService.baseUrl+"/hotel?city="+city);
 
 }
+
 }

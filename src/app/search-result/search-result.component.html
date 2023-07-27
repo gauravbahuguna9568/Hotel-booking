@@ -1,7 +1,7 @@
 <table class="table table-light table-stripped">
     <thead>
      <tr>
-         <th>City</th><th>Location</th><th>Name</th><th>ID</th>
+         <th>City</th><th>Location</th><th>Name</th><th>ID</th> <th>Action</th>
      </tr>
     </thead>
     <tbody>
@@ -10,6 +10,8 @@
          <td>{{h.hotelLocation}}</td>
          <td>{{h.hotelName}}</td>
          <td>{{h.id}}</td>
+         <button class="btn btn-primary" (click)="viewDetails(h.id)">View</button>
+
      </tr>
     </tbody>
  </table>

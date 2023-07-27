@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Hotels } from '../hotels.model';
 import { HotelsService } from '../services/hotels.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-result',
@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class SearchResultComponent {
   hotel : Hotels[]=[];
   
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute,private router: Router) {}
 
   ngOnInit() {
 
@@ -21,5 +21,13 @@ export class SearchResultComponent {
     }
   }
 
+  viewDetails(hotelId: number) {
+    // Find the hotel details based on the provided hotelId
+    const hotelDetails = this.hotel.find((h) => h.id === hotelId);
+
+    // Redirect to the HotelDetailsPage and pass the hotel details as state
+    this.router.navigate(['/details-page'], { state: { hotelDetails: hotelDetails } });
+  }
+  
 
 }
