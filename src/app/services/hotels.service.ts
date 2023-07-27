@@ -14,13 +14,13 @@ export class HotelsService {
   customerRegister(customerReg: Customer){
     this.http.post(HotelsService.baseUrl + "/customer",customerReg).subscribe(data=> data=customerReg);
   }
-  update(customerReg: Customer){
+  updateCustomerDetail(customerReg: Customer){
     this.http.put(HotelsService.baseUrl+"/customer/", +customerReg.customerId ).subscribe(data=> data = customerReg );
   }
-  list(){
+  listHotels(){
     return this.http.get<Customer[]>(HotelsService.baseUrl+"/customer/");
 }
-remove(id:number){
+removeBooking(id:number){
   this.http.delete(HotelsService.baseUrl + "/customer/"+id).subscribe();
 }
 searchByCity(){
