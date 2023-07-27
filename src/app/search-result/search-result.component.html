@@ -1,1 +1,26 @@
-<p>search-result works!</p>
+<form (ngSubmit)="search()">
+    <label>City</label>&nbsp;
+   <select name="city" [(ngModel)]="city" required>
+    <option *ngFor="let c of cities" [value]="c">{{c}}</option>
+   </select>&nbsp;
+    <button type="submit" class="btn btn-primary" (click)="search()" >Search By City</button>
+</form>
+<hr>
+<table class="table table-light table-stripped">
+   <thead>
+    <tr>
+        <th>City</th><th>Location</th><th>Name</th><th>ID</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr *ngFor="let h of hotel">
+        <td>{{h.city}}</td>
+        <td>{{h.hotelLocation}}</td>
+        <td>{{h.hotelName}}</td>
+        <td>{{h.id}}</td>
+    </tr>
+   </tbody>
+</table>
+
+
+

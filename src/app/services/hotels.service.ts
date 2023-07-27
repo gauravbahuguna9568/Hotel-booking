@@ -20,7 +20,7 @@ export class HotelsService {
     this.http.put(HotelsService.baseUrl+"/customer/", +customerReg.customerId ).subscribe(data=> data = customerReg );
   }
   list(){
-    return this.http.get<Customer[]>(HotelsService.baseUrl+"/customer/");
+    return this.http.get<Customer[]>(HotelsService.baseUrl+"/hotel/");
 }
 removeBooking(id:number){
   this.http.delete(HotelsService.baseUrl + "/customer/"+id).subscribe();
