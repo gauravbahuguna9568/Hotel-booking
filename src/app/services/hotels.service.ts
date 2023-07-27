@@ -14,9 +14,9 @@ export class HotelsService {
   customerRegister(customerReg: Customer){
     this.http.post(HotelsService.baseUrl + "/customer",customerReg).subscribe(data=> data=customerReg);
   }
-  // update(customerReg: Customer){
-  //   this.http.put(HotelsService.baseUrl+"/customer/", +customerReg.customerId, customerReg ).subscribe(data=> data = customerReg );
-  // }
+  update(customerReg: Customer){
+    this.http.put(HotelsService.baseUrl+"/customer/", +customerReg.customerId ).subscribe(data=> data = customerReg );
+  }
   list(){
     return this.http.get<Customer[]>(HotelsService.baseUrl+"/customer/");
 }
