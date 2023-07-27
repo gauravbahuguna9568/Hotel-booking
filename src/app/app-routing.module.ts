@@ -27,7 +27,7 @@ const routes: Routes = [
   {path:"details-page", component:DetailsPageComponent},
   {path:"edit", component:EditComponent},
   {path:"invoice", component:InvoiceComponent},
-  {path:"**",component:HomeComponent}
+  {path:"**",redirectTo:'/home', pathMatch:"full"}
 
 ];
 

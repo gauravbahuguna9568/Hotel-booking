@@ -3,5 +3,5 @@ export class Hotels{
     public hotelName : string="";
     public hotelLocation: string="";
     public city : string="";
-    // public photos: string="";
 }
+// public photos: string="";
