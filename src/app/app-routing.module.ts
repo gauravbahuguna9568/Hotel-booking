@@ -1,5 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
+import { ListComponent } from './list/list.component';
+import { SearchComponent } from './search/search.component';
+
+const routes: Routes = [
+  {path:"list",component:ListComponent},
+  {path:"search",component:SearchComponent}
+=======
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { HomeComponent } from './home/home.component';
@@ -25,6 +33,7 @@ const routes: Routes = [
   {path:"edit", component:EditComponent},
   {path:"invoice", component:InvoiceComponent},
   {path:"**",component:HomeComponent}
+>>>>>>> ca23e427a8c36ada630064383f0ae86b8e05fe1e
 ];
 
 @NgModule({
