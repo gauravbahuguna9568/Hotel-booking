@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Hotels } from '../hotels.model';
 import { HotelsService } from '../services/hotels.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-result',
@@ -9,13 +10,24 @@ import { HotelsService } from '../services/hotels.service';
 })
 export class SearchResultComponent {
   hotel : Hotels[]=[];
-  cities: string[]=["Pune","Bareilly"];
-  city: string="";
-  constructor(private service: HotelsService){}
+  
+  constructor(private route: ActivatedRoute,private router: Router) {}
 
-  search(){
-    this.service.searchByCity(this.city).subscribe(data => this.hotel = data);
+  ngOnInit() {
+
+    const state = window.history.state;
+    if (state && state.hotel) {
+      this.hotel = state.hotel;
+    }
   }
 
+  viewDetails(hotelId: number) {
+    // Find the hotel details based on the provided hotelId
+    const hotelDetails = this.hotel.find((h) => h.id === hotelId);
+
+    // Redirect to the HotelDetailsPage and pass the hotel details as state
+    this.router.navigate(['/details-page'], { state: { hotelDetails: hotelDetails } });
+  }
+  
 
 }

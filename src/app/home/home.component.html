@@ -1,1 +1,10 @@
-<p>home works!</p>
+
+<h1> search by city</h1>
+
+<form (ngSubmit)="search()">
+    <label>City</label>&nbsp;
+   <select name="city" [(ngModel)]="city" required>
+    <option *ngFor="let c of cities" [value]="c">{{c}}</option>
+   </select>&nbsp;
+    <button type="submit" class="btn btn-primary" (click)="search()" >Search By City</button>
+</form>
